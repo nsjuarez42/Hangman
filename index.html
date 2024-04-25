@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hangman.css">
 </head>
 <body>
-    <h1>Juego de adivinar palabras</h1>
+    <div id="main">
+        <h1>Juego de adivinar palabras</h1>
 
-    <h2>Introduce letra</h2>
-    <input type="text" name="" id="letter" maxlength="1">
-    <button id="guess">Adivinar</button>
+        <h2>Introduce letra</h2>
+        <input type="text" name="" id="letter" maxlength="1">
+        <button id="guess">Adivinar</button>
+    
+        <p id="word" >
+    
+        </p>
+    
+        <p id="error" class="hidden">
+            La letra asignada no es parte de la palabra
+        </p>
+    
+    </div>
 
-    <p id="word" >
+    <div id="hangman">
+        <div id="rod" class="horizontal"></div>
+        <div id="rope"></div>
+        <div id="pole"></div>
+        <div id="base" class="horizontal"></div>
+        
+        <div id="head"><p>:(</p></div>
+        <div id="torso"></div>
+        <div id="larm" class="arm"></div>
+        <div id="rarm" class="arm"></div>
+        <div class="leg" id="lleg"></div>
+        <div class="leg" id="rleg"></div>
 
-    </p>
-
-    <p id="error" class="hidden">
-        La letra asignada no es parte de la palabra
-    </p>
-
+    </div>
     <script src="./script.js"></script>
+  
 </body>
 </html>

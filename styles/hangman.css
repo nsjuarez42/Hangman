@@ -1,0 +1,80 @@
+#hangman{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid black;
+    margin:auto 5vw;
+    width:30vw;
+    height:80vh;
+}
+#hangman > div{
+    position:relative;
+    border:1px solid black;
+}
+.horizontal{
+    height:0px;
+    width:65px;
+}
+#rope{
+    top:22px;
+}
+#base{
+    width:80px;
+}
+#rod{
+    top:22px;
+    left:32px;
+}
+#pole{
+    height:130px;
+    width:0px;
+}
+#rope{
+    height:20px;
+    width:0px;
+    left:65px;
+}
+
+#head{
+    border-radius: 20px;
+    height:20px;
+    width:20px;
+    bottom:112px;
+    left:65px;
+    text-align: center;
+}
+#head p{
+    transform:rotate(90deg)
+}
+#torso{
+    height:35px;
+    width:0;
+    bottom:112px;
+    left:65px;
+}
+.arm{
+    width:30px;
+    height:0;
+    bottom:130px;
+}
+#larm{
+    left:54px;
+    transform:rotate(-45deg);
+}
+#rarm{
+    left:77px;
+    transform: rotate(45deg);
+}
+.leg{
+    width:32px;
+    bottom:106px;
+}
+#lleg{
+    left:52px;
+    transform:rotate(-45deg)
+}
+#rleg{
+    left:78px;
+    transform:rotate(45deg)
+}
