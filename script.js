@@ -13,7 +13,10 @@ for(let i=0;i<chars.length;i++){
     wordguess+="_"
 }
 
+
 wordfill.innerHTML = wordguess
+const error_sequence = ['base','pole','rod','rope','head','torso','larm','rarm','lleg','rleg']
+let errors = 0
 
 guessbtn.onclick=()=>{
     let u_guess = letter.value
@@ -40,6 +43,21 @@ guessbtn.onclick=()=>{
                 console.log("ganaste")
             }
         }else{
+            //error
+            //show 
+            errors+=1
+            if(errors < error_sequence.length){
+                let part =document.getElementById(error_sequence[errors-1])
+                part.setAttribute("class",part.getAttribute("class").replace("hidden",""))
+            }else{
+                let part =document.getElementById(error_sequence[error_sequence.length-1])
+                part.setAttribute("class",part.getAttribute("class").replace("hidden",""))
+                alert("You lose")
+                //loss 
+                //give chance to start again
+            }
+            
+
             error.innerHTML = "La letra asignada no es parte de la palabra"
             error.setAttribute("class","")
         }

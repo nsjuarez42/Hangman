@@ -6,6 +6,12 @@
     <title>Guess</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/hangman.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Fin google fonts-->
 </head>
 <body>
     <div id="main">
@@ -26,17 +32,17 @@
     </div>
 
     <div id="hangman">
-        <div id="rod" class="horizontal"></div>
-        <div id="rope"></div>
-        <div id="pole"></div>
-        <div id="base" class="horizontal"></div>
+        <div id="rod" class="horizontal hidden"></div>
+        <div id="rope" class="hidden"></div>
+        <div id="pole" class="hidden"></div>
+        <div id="base" class="horizontal hidden"></div>
         
-        <div id="head"><p>:(</p></div>
-        <div id="torso"></div>
-        <div id="larm" class="arm"></div>
-        <div id="rarm" class="arm"></div>
-        <div class="leg" id="lleg"></div>
-        <div class="leg" id="rleg"></div>
+        <div id="head" class="hidden"><p>:(</p></div>
+        <div id="torso" class="hidden"></div>
+        <div id="larm" class="arm hidden"></div>
+        <div id="rarm" class="arm hidden"></div>
+        <div id="lleg" class="leg hidden"></div>
+        <div id="rleg" class="leg hidden"></div>
 
     </div>
     <script src="./script.js"></script>
